@@ -1,0 +1,78 @@
+body {
+  color: white;
+  background-color: #e476ae;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  width: 100vw;
+  height: 100%;
+  background: url("https://raw.githubusercontent.com/ConnerItayi/FF-website/master/images/felix.jpg"), #e476ae;
+  background-size: 100%;
+  filter: blur(4px) brightness(0.75);
+}
+
+.main {
+  height: 100vh;
+}
+@media only screen and (min-width: 993px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.hero {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 50px 0 30px 0;
+  box-shadow: 0 0 20px black;
+}
+@media only screen and (max-width: 992px) and (min-width: 601px) {
+  .hero {
+    margin: 100px 0 80px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero {
+    margin: 0;
+    width: 100%;
+    min-width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+  }
+}
+.hero h1 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 60px;
+  font-family: Roboto, serif;
+}
+@media only screen and (max-width: 992px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+.hero h2 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+@media only screen and (max-width: 992px) {
+  .hero h2 {
+    font-size: 15px;
+  }
+}
+.hero .btn-large {
+  background-color: #7fa0f9;
+  margin: 10px 10px 0 0;
+}
+.hero .btn-large:hover {
+  background-color: #38c158;
+}
